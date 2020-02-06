@@ -5,12 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Facebook Pixel</title>
+	<script>
+	  fbq('track', 'StartTrial');
+	</script>
 </head>
 <body>
 	<header>Header</header>
 	<main>
 		<h1>Hello!</h1>
 		<button>按我</button>
+		<button id="startTrialButton">開始試用</button>
+		<script type="text/javascript">
+		document.getElementById('startTrialButton').addEventListener('click', function() {
+		insert_event_code_here;
+		...
+		}, false);
+		</script>
 	</main>
 	<footer>Footer</footer>
 <!-- Facebook Pixel Code -->
